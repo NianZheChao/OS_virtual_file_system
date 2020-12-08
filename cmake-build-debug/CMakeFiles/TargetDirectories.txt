@@ -1,0 +1,3 @@
+D:/2020/GitHub/OS_virtual_file_system/cmake-build-debug/CMakeFiles/OS_virtual_file_system.dir
+D:/2020/GitHub/OS_virtual_file_system/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/2020/GitHub/OS_virtual_file_system/cmake-build-debug/CMakeFiles/rebuild_cache.dir

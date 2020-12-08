@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/2020/GitHub/OS_virtual_file_system/core.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+time.h
+-
+
+D:/2020/GitHub/OS_virtual_file_system/functions.h
+core.h
+D:/2020/GitHub/OS_virtual_file_system/core.h
+
+D:/2020/GitHub/OS_virtual_file_system/main.cpp
+functions.h
+D:/2020/GitHub/OS_virtual_file_system/functions.h
+
