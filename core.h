@@ -11,41 +11,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-/*
-
-#define DISK_SIZE 1024                          //磁盘块大小
-#define DISK_NUM 1024                           //磁盘块数量
-#define MEM_D_SIZE 1024*1024                    //总磁盘空间
-#define FAT_SIZE DISK_NUM*sizeof(struct FAT)    //FAT表大小 1024 * 8
-
-
-//todo:unfinished define
-
-typedef struct FCB{
-    char filename[10];                          //文件或目录名
-    int inodeAddr;                              //inode结点地址
-};
-//todo:fcb数组
-
-typedef struct inode{
-    int attribute;                              //目录为1，文件为0
-    int first_disk;                             //起始盘块号
-    int file_size;                              //文件或目录大小
-    int sub_dir;                                //子目录起始盘块号
-    int is_root;                                //根目录为1，否则为0
-};
-
-typedef struct FAT{
-    int next;                                   //下一个盘块号
-    int is_empty;                               //盘块空闲为0
-};
-
-//todo:用户打开文件表
-
-//全局变量
-struct FAT *fat;
-struct FCB *root;
-*/
 
 
 #define DISK_SIZE 1024                                      //磁盘块大小 1024
@@ -90,10 +55,10 @@ struct FAT *fat;                                            //fat表数组
 struct FCB *root;                                           //根目录数组
 struct FCB *cur_dir;                                        //记录当前目录的数组
 struct opened_table opening_table;                          //打开文件表
-int fd = -1;                                                  //文件打开表的序号
+int fd = -1;                                                //文件打开表的序号
 char *currence_dir;                                         //记录当前路径
 char *total_disk;                                           //虚拟磁盘起始地址
-char user[10];                                                //用户名
+char user[10];                                              //用户名
 
 //函数声明
 void format();

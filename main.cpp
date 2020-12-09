@@ -9,7 +9,7 @@ int main() {
     char name[10];
     int i, flag;
     user_load();
-    fflush(stdin);
+    //fflush(stdin);
     if ((fp = fopen("disk.dat", "rb")) == NULL) {
         printf("是否进行格式化?(y/n)");
         scanf("%c", &ch);
