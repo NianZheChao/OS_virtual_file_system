@@ -361,6 +361,7 @@ int mkdir(char *name) {
     cur_mkdir[1].sub_dir = cur_mkdir[1].first;
     cur_mkdir[1].attribute = '1';
     cur_mkdir[1].size = ROOT_DISK_SIZE;
+
     //子目录都初始化为空
     for (i = 2; i < MSD + 2; i++) {
         cur_mkdir[i].sign = 0;
